@@ -95,10 +95,20 @@ print([1,2,3] in t1)
 # 2 create tuple with all countries in Europe (ask ChatGPT)
 # 3 create tuple with all the days of feb (1, 2 ... 28)
 # 4 create tuple with all the days of dec (1, 2 .. 31)
+
+# EXTRA -- BONUS
+#days_dec = tuple(range(1, 31 + 1))
+#days_dec = (x for x in range(1, 31 + 1))
+#print(days_dec)
+
 # 5 create tuple of all the month in the year
 # 6 create tuple of all USA presidents till today (ask ChatGPT), use len to find out how many are they
 # 7 use mean to find the avg of this tuple = (8, 11, -3, 12)
 
+# write a function that gets numbers and return  the max number in a tuple
+def get_max(lst1: list) -> tuple:
+    pass
+# [5, 0, 55, -8, 49] -> (55,)
 
 
 
