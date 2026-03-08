@@ -121,7 +121,7 @@ Return a tuple containing:
 The sorted list of shared interests
 The integer count of how many interests they have in common
 Input:
-  person_a = ["coding", "hiking", "cooking", "hiking"]
+  person_a = ["coding", "hiking", "cooking", "surfing"]
   person_b = ["hiking", "gaming", "coding"]
 Output: 
   (['coding', 'hiking'], 2)
