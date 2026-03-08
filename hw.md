@@ -40,11 +40,11 @@ def input_until_lucky(lucky_numbers: tuple) -> int:
 
 Mission:
 
-* The function receives the **tuple of lucky numbers**.
-* Ask the user to **input numbers**.
-* Continue asking until the user guesses **one of the lucky numbers**.
-* When the user guesses correctly, **stop the loop**.
-* Return the **number of attempts** the user needed.
+* The function receives the **tuple of lucky numbers**
+* Ask the user to **input numbers**
+* Continue asking until the user guesses **one of the lucky numbers**
+* When the user guesses correctly, **stop the loop**
+* Return the **number of attempts** the user needed
 
 Example
 
