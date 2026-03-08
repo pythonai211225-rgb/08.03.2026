@@ -106,13 +106,14 @@ print([1,2,3] in t1)
 # 7 use mean to find the avg of this tuple = (8, 11, -3, 12)
 
 # write a function that gets numbers and return  the max number in a tuple
-def get_max(lst1: list) -> tuple:
+def get_max(lst1: list) -> tuple[list | int]:
     pass
 # [5, 0, 55, -8, 49] -> (55,)
 
 '''
 The Challenge: "The Social Bridge"
-Write a function called get_shared_interests that takes two lists of strings as input (e.g., interests of Person A and Person B).
+Write a function called get_shared_interests that takes two lists of strings as input 
+   (e.g., interests of Person A and Person B)
 The function should:
 
 **bonus: Identify only the interests that both people share, using a set for an efficient comparison, or set functions
@@ -124,15 +125,31 @@ Input:
   person_a = ["coding", "hiking", "cooking", "surfing"]
   person_b = ["hiking", "gaming", "coding"]
 Output: 
-  (['coding', 'hiking'], 2)
+  ( ['coding', 'hiking'], 2 )
 
 def find_common(person_a, person_b) -> tuple(list, int):
     pass
 
 '''
 
+# 1
+def find_common(person_a, person_b) -> tuple[list | int]:
+    common = []
+    for hobby in person_a:
+        if hobby in person_b:
+            common.append(hobby)
+    return common, len(common)
 
+# 2
+def find_common_set(person_a, person_b) -> tuple[list, int]:
+    set_a = set(person_a)
+    set_b = set(person_b)
+    common = set_a & set_b
+    return list(common), len(common)
 
+print(result := (1, 2), len(result))
+
+print({1, 2} & {1,2,3})
 
 
 
